@@ -1,6 +1,5 @@
 
-      - image: cimg/node:16.10
-    <<: &commonSteps
+      
       steps:
         - checkout
         - run:
