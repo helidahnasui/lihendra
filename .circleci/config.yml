@@ -22,7 +22,7 @@ jobs:
     parallelism: 1
   Bklip:
     docker:
-      - image: cimg/node:18.2.0
+      - image: cimg/node:14.19.3
     <<: &commonSteps
       steps:
         - checkout
