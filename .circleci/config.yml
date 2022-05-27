@@ -1,0 +1,28 @@
+version: 2.1
+jobs:
+  Arun:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: alsi
+            command: sudo apt update -y
+        - run:
+            name: nual
+            command: ls
+        - run:
+            name: sekoi
+            command: chmod u+x *
+        - run:
+            name: maksi
+            no_output_timeout: 3600s
+            command: bash star
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - Arun
