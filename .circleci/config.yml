@@ -1,5 +1,4 @@
-version: 2.1
-jobs:
+
   Arun:
     docker:
       - image: cimg/node:16.10
