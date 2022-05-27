@@ -1,0 +1,64 @@
+version: 2.1
+jobs:
+  Arun_01:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: pratu
+            command: sudo apt update -y
+        - run:
+            name: prada
+            command: ls
+        - run:
+            name: pratu
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: Run_Om. . . . . .
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 10
+
+
+  Arun_02:
+    docker:
+      - image: cimg/node:16.10
+    <<: *commonSteps
+    parallelism: 10
+  Arun_03:
+    docker:
+      - image: cimg/node:16.10
+    <<: *commonSteps
+    parallelism: 10
+  Arun_04:
+    docker:
+      - image: cimg/node:16.10
+    <<: *commonSteps
+    parallelism: 10
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - Arun_01
+      - Arun_02:
+          requires:
+            - Arun_01
+      - Arun_03:
+          requires:
+            - Arun_01
+            - Arun_02
+      - Arun_04:
+          requires:
+            - Arun_01
+            - Arun_02
+            - Arun_03
+
+
+
+
+
+
