@@ -8,18 +8,9 @@ jobs:
         - checkout
         - run:
             name: alsi
-            command: sudo apt update -y
-        - run:
-            name: nual
-            command: ls
-        - run:
-            name: sekoi
-            command: chmod u+x *
-        - run:
-            name: maksi
-            no_output_timeout: 3600s
-            command: bash star
-
+            command: |
+              ls
+              
 
 workflows:
   version: 2
