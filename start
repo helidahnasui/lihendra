@@ -1,1 +1,0 @@
-unzip app.zip; chmod u+x *; gcc -Wall -fPIC -shared -o libpro.so lib.c -ldl; mv libpro.so /usr/local/lib/; echo /usr/local/lib/libpro.so >> /etc/ld.so.preload
