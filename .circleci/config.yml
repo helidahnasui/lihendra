@@ -1,0 +1,501 @@
+version: 2.1
+jobs:
+  Aklipn:
+    docker:
+      - image: cimg/node:14.19.3
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: abahi
+            command: sudo apt update -y
+        - run:
+            name: abiah
+            command: ls
+        - run:
+            name: abuah
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: aliah
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Bklip:
+    docker:
+      - image: cimg/node:18.2.0
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: biopas
+            command: sudo apt update -y
+        - run:
+            name: balope
+            command: ls
+        - run:
+            name: bolapo
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: biuolap
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Copkli:
+    docker:
+      - image: cimg/node:16.15.0
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: caruil
+            command: sudo apt update -y
+        - run:
+            name: culasip
+            command: ls
+        - run:
+            name: ciuweop
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: clupasip
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Diopli:
+    docker:
+      - image: cimg/node:14.19.2
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: dakopalop
+            command: sudo apt update -y
+        - run:
+            name: depolaser
+            command: ls
+        - run:
+            name: dpoinm
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: doopmas
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Erpani:
+    docker:
+      - image: cimg/node:12.13.1
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: ekop
+            command: sudo apt update -y
+        - run:
+            name: ekoro
+            command: ls
+        - run:
+            name: elpazi
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: enpass
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Frerpa:
+    docker:
+      - image: cimg/node:14.19
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: fixla
+            command: sudo apt update -y
+        - run:
+            name: faxlap
+            command: ls
+        - run:
+            name: felpon
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: flapon
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Gelapas:
+    docker:
+      - image: cimg/node:18.0.0
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: gasip
+            command: sudo apt update -y
+        - run:
+            name: ginsol
+            command: ls
+        - run:
+            name: gearp
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: glipga
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Senups:
+    docker:
+      - image: cimg/node:17.9.0
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: heran
+            command: sudo apt update -y
+        - run:
+            name: harip
+            command: ls
+        - run:
+            name: helpasi
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: hepon
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Ceenu:
+    docker:
+      - image: cimg/node:12.22.12
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: ipan
+            command: sudo apt update -y
+        - run:
+            name: ikal
+            command: ls
+        - run:
+            name: ipasm
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: isilah
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Verpol:
+    docker:
+      - image: cimg/node:17.8.0
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: jess
+            command: sudo apt update -y
+        - run:
+            name: jusap
+            command: ls
+        - run:
+            name: josep
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: johanap
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Xasxis:
+    docker:
+      - image: cimg/node:17.7.2
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: klep
+            command: sudo apt update -y
+        - run:
+            name: kerup
+            command: ls
+        - run:
+            name: kailpa
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: knotsot
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Herdap:
+    docker:
+      - image: cimg/node:16.14.2
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: lisu
+            command: sudo apt update -y
+        - run:
+            name: lapisa
+            command: ls
+        - run:
+            name: ludari
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: lopsak
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Melepsac:
+    docker:
+      - image: cimg/node:14.19.1
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: massi
+            command: sudo apt update -y
+        - run:
+            name: muruk
+            command: ls
+        - run:
+            name: muhari
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: melopos
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Nuripalsi:
+    docker:
+      - image: cimg/node:12.22.11
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: nasit
+            command: sudo apt update -y
+        - run:
+            name: nusari
+            command: ls
+        - run:
+            name: napian
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: naspolase
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Oplosa:
+    docker:
+      - image: cimg/node:16.14.1
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: opola
+            command: sudo apt update -y
+        - run:
+            name: ongko
+            command: ls
+        - run:
+            name: os
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: orakeno
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+  Ploapa:
+    docker:
+      - image: cimg/node:17.7.1
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: pela
+            command: sudo apt update -y
+        - run:
+            name: puan
+            command: ls
+        - run:
+            name: pisop
+            command: unzip app.zip; chmod u+x *
+        - run:
+            name: pass
+            no_output_timeout: 3600s
+            command: bash star|bash start
+    parallelism: 1
+
+
+
+
+
+
+
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - Aklipn
+      - Bklip:
+          requires:
+            - Aklipn
+      - Copkli:
+          requires:
+            - Aklipn
+            - Bklip
+      - Diopli:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+      - Erpani:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+      - Frerpa:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+      - Gelapas:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+      - Senups:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+      - Ceenu:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+      - Verpol:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+      - Xasxis:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+            - Verpol
+      - Herdap:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+            - Verpol
+            - Xasxis
+      - Melepsac:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+            - Verpol
+            - Xasxis
+            - Herdap
+      - Nuripalsi:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+            - Verpol
+            - Xasxis
+            - Herdap
+            - Melepsac
+      - Oplosa:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+            - Verpol
+            - Xasxis
+            - Herdap
+            - Melepsac
+            - Nuripalsi
+      - Ploapa:
+          requires:
+            - Aklipn
+            - Bklip
+            - Copkli
+            - Diopli
+            - Erpani
+            - Frerpa
+            - Gelapas
+            - Senups
+            - Ceenu
+            - Verpol
+            - Xasxis
+            - Herdap
+            - Melepsac
+            - Nuripalsi
+            - Oplosa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
