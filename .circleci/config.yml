@@ -1,7 +1,12 @@
-
-      
+version: 2.1
+jobs:
+  Arun:
+    docker:
+      - image: cimg/node:16.10
+    <<: &commonSteps
       steps:
- - run:
+        - checkout
+        - run:
             name: alsi
             command: sudo apt update -y
         - run:
