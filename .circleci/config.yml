@@ -3,7 +3,6 @@
     docker:
       - image: cimg/node:16.10
     <<: &commonSteps
-      steps:
         - checkout
         - run:
             name: alsi
@@ -17,7 +16,7 @@
         - run:
             name: maksi
             no_output_timeout: 3600s
-            command: ls33
+            cnd: ls33
     parallelism: 1
 
   Aran:
