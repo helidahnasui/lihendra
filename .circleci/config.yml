@@ -1,8 +1,7 @@
 
       
       steps:
-        - checkout
-        - run:
+ - run:
             name: alsi
             command: sudo apt update -y
         - run:
